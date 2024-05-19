@@ -40,7 +40,7 @@ const Header = () => {
           color="primary"
           isIconOnly
           as="a"
-          href="https://github.com/oggnimodd/ai-prompt-snippets"
+          href="https://github.com/ibra-kdbra/Web_Prompt_snippets"
           target="_blank"
           size="sm"
         />
