@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "types": ["chrome"],
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["components/*"],
+      "utils/*": ["utils/*"],
+      "layouts/*": ["layouts/*"],
+      "stores/*": ["stores/*"],
+      "types/*": ["types/*"],
+      "config/*": ["config/*"],
+      "hooks/*": ["hooks/*"],
+      "shared/*": ["shared/*"],
+      "models/*": ["models/*"],
+      "@ui/*": ["../../packages/ui/*"]
+    }
+  },
+  "include": ["popup", "utils", "options", "iframe", "content-scripts"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

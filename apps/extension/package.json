@@ -1,0 +1,50 @@
+{
+  "name": "extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "clean": "rm -rf .dist node_modules",
+    "preview": "vite preview",
+    "ladle:dev": "ladle serve",
+    "ladle:build": "ladle build",
+    "ladle:preview": "ladle preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
+    "@ladle/react": "^2.17.2",
+    "@nextui-org/react": "^2.1.13",
+    "clsx": "^1.2.1",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.279.0",
+    "nanoid": "^5.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.2",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.15.0",
+    "use-file-picker": "^2.1.0",
+    "zod": "^3.20.0",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.17",
+    "@types/file-saver": "^2.0.5",
+    "@types/chrome": "^0.0.244",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "@vitest/ui": "^0.31.4",
+    "jsdom": "^22.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.31.4"
+  }
+}
