@@ -1,15 +1,15 @@
 export type ChatProvider =
-  | "chat-gpt"
+  | "chatgpt"
   | "poe"
   | "claude"
   | "perplexity"
   | "gemini";
 export type ChatHost =
-  | "chat.openai.com"
+  | "chatgpt.com"
   | "poe.com"
   | "claude.ai"
   | "www.perplexity.ai"
-  | "gemini.google.com";
+  | "gemini.google.com.app";
 
 export interface ProviderInfo {
   name: ChatProvider;

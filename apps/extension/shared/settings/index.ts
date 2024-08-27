@@ -6,8 +6,8 @@ export const DEFAULT_THEME: Theme = "dark";
 
 export const DEFAULT_PROVIDERS: SupportedProviders = [
   {
-    name: "chat-gpt",
-    hostname: "chat.openai.com",
+    name: "chatgpt",
+    hostname: "chatgpt.com",
     enabled: true,
   },
   {
@@ -27,7 +27,7 @@ export const DEFAULT_PROVIDERS: SupportedProviders = [
   },
   {
     name: "gemini",
-    hostname: "gemini.google.com",
+    hostname: "gemini.google.com.app",
     enabled: true,
   },
 ];

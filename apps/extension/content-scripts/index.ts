@@ -71,7 +71,7 @@ const toggleIframe = () => {
   }
 
   // TODO : this is just a hack, need to refactor the entire content-scripts:
-  if (hostname === "gemini.google.com" && iframeMountPointParent) {
+  if (hostname === "gemini.google.com.app" && iframeMountPointParent) {
     if (iframeMountPointParent.style.width === "calc(100% - 250px)") {
       iframeMountPointParent.style.width = "100%";
     } else if (iframeMountPointParent.style.width === "100%") {
@@ -91,7 +91,7 @@ const isProviderEnabled = async (provider: ChatProvider) => {
 };
 
 const injectIframe = async () => {
-  if (await isProviderEnabled("chat-gpt")) {
+  if (await isProviderEnabled("chatgpt")) {
     iframeMountPointParent = document.querySelector(
       "#__next > div.relative.z-0.flex.h-full.w-full.overflow-hidden > div.relative.flex.h-full.max-w-full.flex-1.flex-col.overflow-hidden",
     );
@@ -111,7 +111,7 @@ const injectIframe = async () => {
 
       newDiv.append(iframe);
 
-      const listener = new Listener("chat-gpt");
+      const listener = new Listener("chatgpt");
       listener.listen();
     }
   }

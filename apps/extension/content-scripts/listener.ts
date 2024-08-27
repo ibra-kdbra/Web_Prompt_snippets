@@ -25,7 +25,7 @@ class Listener {
           if (!this.prompt) return;
 
           switch (this.chatprovider) {
-            case "chat-gpt":
+            case "chatgpt":
               this.chatGPT();
               break;
             case "claude":
